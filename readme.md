@@ -64,26 +64,26 @@ php artisan migrate
 
 ## Endpoints
 
-####Register Routes
-* Route: /user-register. Request type: POST. Form-data: 
-* /companies-register (post)
+#### Register Routes
+* Route: /user-register. Request type: POST. Form-data: name, email, password.
+* Route: /companies-register. Request type: POST. Form-data: name, email, password.
 
-####Login Routes
-* /user-login (post)
-* /companies-login (post)
+#### Login Routes
+* Route: /user-login. Request type: POST. Form-data: email, password.
+* Route: /companies-login. Request type: POST. Form-data: email, password.
 
-####Products Routes (CRUD)
-* /users/add (post)
-* /users/view/{id} (post)
-* /users/update/{id} (post)
-* /users/delete/{id} (post)
-* /companies/add/{id} (post)
-* /companies/update/{id} (post)
-* /companies/delete/{id} (post)
+#### Products Routes (CRUD)
+* Route: /users/add. Request type: POST. Form-data: name, price.
+* Route: /users/view/{id}. Request type: POST.
+* Route: /users/update/{id}. Request type: POST. Form-data: name, price.
+* Route: /users/delete/{id}. Request type: POST.
+* Route: /companies/add. Request type: POST. Form-data: name, price.
+* Route: /companies/view/{id}. Request type: POST.
+* Route: /companies/update/{id}. Request type: POST. Form-data: name, price.
+* Route: /companies/delete/{id}. Request type: POST.
 
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* [laravelcode article](https://laravelcode.com/post/how-to-set-multi-authentication-in-jwt)
+* [Jino Antony medium article](https://medium.com/@JinoAntony/multi-user-api-authentication-using-laravel-jwt-8ae572b0c4cf)
